@@ -1,7 +1,8 @@
 <?php
+App::uses('AppController', 'Controller');
 
 class OpenSearchAppController extends AppController {
-	public $useTable = false;
-}
 
-?>
+	public $useTable = false;
+
+}

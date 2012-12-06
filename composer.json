@@ -1,0 +1,31 @@
+{
+	"name": "dereuromark/opensearch-cakephp",
+	"type": "cakephp-plugin",
+	"description": "A CakePHP plugin for using opensearch",
+	"keywords": ["cakephp", "plugin", "opensearch", "search engine"],
+	"homepage": "https://github.com/dereuromark/opensearch",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Łukasz Korecki",
+			"homepage": "http://coffeesounds.com"
+		},
+		{
+			"name": "Mark Scherer",
+			"homepage": "http://www.dereuromark.de"
+		}
+	],
+	"require": {
+		"php": ">=5.3",
+		"composer/installers": "*",
+		"dereuromark/tools-cakephp": "*"
+	},
+	"support": {
+		"source": "https://github.com/dereuromark/opensearch"
+	},
+	"extra": {
+		"installer-paths": {
+			"Plugin/OpenSearch/": ["dereuromark/opensearch-cakephp"]
+		}
+	}
+}
