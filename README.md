@@ -11,8 +11,15 @@ CakePHP2.x
 1. Create appropriate table (cake console: `cake schema create OpenSearch.OpenSearch`)
 1. Create an action for performing searches
 1. Add at least one search type (via backend `admin/open_search/addons/` for example)
-1. Use the helper to render appropriate installer links in the layout
-1. Done / Profit
+
+## Usage
+
+Use the helper to render appropriate links in the layout:
+
+    $this->loadHelper('OpenSearch.OpenSearch');
+    echo $this->OpenSearch->metaLink('web', 'my title');
+
+for example, if you added `web` as search type.
 
 ## TODO
 
@@ -27,4 +34,5 @@ My Tools Plugin for admin backend actions (optional, you can directly use Mysql,
 MIT
 
 Łukasz Korecki 2009
+
 Mark Scherer 2012
