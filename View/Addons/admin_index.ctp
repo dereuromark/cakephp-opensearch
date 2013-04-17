@@ -47,9 +47,9 @@ foreach ($addons as $addon) { ?>
 <?php } ?>
 	</table>
 
-	<p class="pagination">
+	<div class="pagination-container">
 <?php echo $this->element('Tools.pagination'); ?>
-	</p>
+	</div>
 
 </div>
 
