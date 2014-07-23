@@ -1,4 +1,4 @@
-# Open Search Plugin
+# CakePHP OpenSearch Plugin
 Create a nice web search that integrates into modern browsers (direct search using TAB).
 
 See http://de.wikipedia.org/wiki/OpenSearch
@@ -7,7 +7,20 @@ CakePHP2.x
 
 ## Installation
 
-1. Copy the plugin over to your App/Plugin/ directory or install using composer
+### Composer
+This is the preferred way of installing:
+
+```
+"require": {
+	"dereuromark/cakephp-opensearch": "dev-master"
+	}
+```
+
+### Manual
+Copy the plugin over to your App/Plugin/ directory.
+
+## Preparation
+
 1. Create appropriate table (cake console: `cake schema create OpenSearch.OpenSearch`)
 1. Create an action for performing searches
 1. Add at least one search type (via backend `admin/open_search/addons/` for example)
@@ -16,8 +29,10 @@ CakePHP2.x
 
 Use the helper to render appropriate links in the layout:
 
-    $this->loadHelper('OpenSearch.OpenSearch');
-    echo $this->OpenSearch->metaLink('web', 'my title');
+```php
+$this->loadHelper('OpenSearch.OpenSearch');
+echo $this->OpenSearch->metaLink('web', 'my title');
+```
 
 for example, if you added `web` as search type.
 

@@ -1,9 +1,9 @@
 {
-	"name": "dereuromark/opensearch-cakephp",
+	"name": "dereuromark/cakephp-opensearch",
 	"type": "cakephp-plugin",
-	"description": "A CakePHP plugin for using opensearch",
+	"description": "A CakePHP plugin for using OpenSearch",
 	"keywords": ["cakephp", "plugin", "opensearch", "search engine"],
-	"homepage": "https://github.com/dereuromark/opensearch",
+	"homepage": "https://github.com/dereuromark/cakephp-opensearch",
 	"license": "MIT",
 	"authors": [
 		{
@@ -21,11 +21,9 @@
 		"dereuromark/tools-cakephp": "*"
 	},
 	"support": {
-		"source": "https://github.com/dereuromark/opensearch"
+		"source": "https://github.com/dereuromark/cakephp-opensearch"
 	},
 	"extra": {
-		"installer-paths": {
-			"Plugin/OpenSearch/": ["dereuromark/opensearch-cakephp"]
-		}
+		"installer-name": "OpenSearch"
 	}
 }
