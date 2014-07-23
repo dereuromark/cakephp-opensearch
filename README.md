@@ -13,7 +13,7 @@ This is the preferred way of installing:
 ```
 "require": {
 	"dereuromark/cakephp-opensearch": "dev-master"
-	}
+}
 ```
 
 ### Manual
